@@ -18,8 +18,8 @@ playButton.addEventListener("click", function () {
   let isEvenNumber = isEven(sum);
 
   if (
-    (userSelection == "even" && isEvenNumber == true) ||
-    (userSelection == "odd" && isEvenNumber == false)
+    (userSelection == "even" && isEvenNumber) ||
+    (userSelection == "odd" && !isEvenNumber)
   ) {
     winner.innerText = "Utente";
   } else {
