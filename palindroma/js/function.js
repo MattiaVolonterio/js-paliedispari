@@ -4,7 +4,7 @@
  * @returns Restituisce true se palindroma e false se non lo è
  */
 function isPalindrome(word) {
-  if (typeof word == "string" && word != "") {
+  if (word) {
     let wordLowered = word.toLowerCase();
     let wordLenght = wordLowered.length - 1;
     let wordReversed = "";
