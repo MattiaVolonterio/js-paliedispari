@@ -1,10 +1,10 @@
 /**
  *
  * @param {string} word La parola su cui effettuare la verifica
- * @returns Restituisce un console.log se la parola inserita è palindroma o no
+ * @returns Restituisce true se palindroma e false se non lo è
  */
 function isPalindrome(word) {
-  if (typeof word == "string") {
+  if (typeof word == "string" && word != "") {
     let wordLowered = word.toLowerCase();
     let wordLenght = wordLowered.length - 1;
     let wordReversed = "";
@@ -15,11 +15,12 @@ function isPalindrome(word) {
     }
 
     if (wordLowered == wordReversed) {
-      return console.log("La parola inserita è palindroma");
+      return true;
     } else {
-      return console.log("La parola inserita non è palindroma");
+      return false;
     }
   } else {
     alert("La parola inserita non è corretta");
+    location.reload();
   }
 }
