@@ -5,7 +5,7 @@
  */
 function isPalindrome(word) {
   if (word) {
-    let wordLowered = word.toLowerCase();
+    let wordLowered = word.toLowerCase().trim();
     let wordLenght = wordLowered.length - 1;
     let wordReversed = "";
 
